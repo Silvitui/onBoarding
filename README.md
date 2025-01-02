@@ -7,8 +7,8 @@ Digital OnBoarding is a simple, step-by-step system to help users navigate throu
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/tu-usuario/onboarding.git
-   cd onboarding
+   git clone https://github.com/tu-usuario/onBoarding.git
+   cd onBoarding
    ```
 2. Install dependencies
    ```bash
