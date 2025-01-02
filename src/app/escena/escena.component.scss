@@ -1,0 +1,111 @@
+.escena-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  width: 100%;
+  max-width: 350px; 
+  height: 600px; 
+  border-radius: 15px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header {
+  padding: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-header img {
+  width: 100%;
+  height: 300px; 
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover; 
+}
+
+.card-body {
+  min-height: 150px; 
+  padding: 1.5rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left; 
+  
+}
+
+.card-title {
+  font-size: 1rem; 
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.875rem; 
+  color: #555;
+  text-align: left; 
+}
+
+.card-footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.indicator-container {
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: black;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
+  
+}
+
+button.round-button {
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #222;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button.round-button:disabled {
+  opacity: 0.5;
+ 
+}
+
+button.round-button:enabled:hover {
+  background-color: #8b8484;
+  color: black;
+}

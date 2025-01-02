@@ -1,0 +1,30 @@
+<div class="escena-container d-flex justify-content-center align-items-center vh-100">
+  <div *ngFor="let step of steps; let i = index" class="card shadow position-relative w-50"
+       [style.display]="i === currentStep ? 'block' : 'none'">
+    
+    <div class="card-header text-center" [ngStyle]="{ 'background-color': step.bgColor }">
+      <img [src]="step.img" class="card-img-top img-fluid">
+    </div>
+    
+    <div class="card-body text-center">
+      <h4 class="card-title">{{ step.title }}</h4>
+      <p class="card-text">{{ step.description }}</p>
+    </div>
+
+
+    <div class="button-container">
+      <button *ngIf="currentStep > 0" (click)="prevStep()" class="round-button">←</button>
+      <button *ngIf="currentStep < steps.length - 1" (click)="nextStep()" class="round-button">→</button>
+    </div>
+    
+
+    <div class="indicator-container ms-3">
+      <span *ngFor="let puntitos of steps; let j = index"
+            class="indicator"
+            [ngClass]="{'active': j === currentStep}"
+            (click)="goToStep(j)">
+      </span>
+    </div>
+    
+  </div>
+</div>
