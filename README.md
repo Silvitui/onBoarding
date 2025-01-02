@@ -7,7 +7,7 @@ Digital OnBoarding is a simple, step-by-step system to help users navigate throu
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/tu-usuario/onBoarding.git
+  git clone https://github.com/Silvitui/onBoarding.git
    cd onBoarding
    ```
 2. Install dependencies
