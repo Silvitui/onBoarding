@@ -9,7 +9,6 @@ Digital OnBoarding is a simple, step-by-step system to help users navigate throu
    ```bash
    git clone https://github.com/Silvitui/onBoarding.git
    cd onboarding
-
 2. Install dependencies:
    ```bash
    npm install
@@ -18,6 +17,7 @@ Digital OnBoarding is a simple, step-by-step system to help users navigate throu
    ```bash
    ng serve -o
    ```
+
 
 
 😁
